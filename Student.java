@@ -1,4 +1,4 @@
-package class1;
+package ref.class1;
 
 public class Student {
     String name;
