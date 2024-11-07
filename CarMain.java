@@ -1,12 +1,21 @@
-package static3.ex;
+package extends1.overriding;
 
 public class CarMain {
 
     public static void main(String[] args) {
-        Car car1 = new Car("K3");
-        Car car2 = new Car("G80");
-        Car car3 = new Car("Model Y");
+        ElectricCar electricCar = new ElectricCar();
+        electricCar.move();
+        electricCar.charge();
+        electricCar.openDoor();
 
-        Car.showTotalCars();
+        GasCar gasCar = new GasCar();
+        gasCar.move();
+        gasCar.fillUp();
+        gasCar.openDoor();
+
+        HydrogenCar hydrogenCar = new HydrogenCar();
+        hydrogenCar.move();
+        hydrogenCar.fillHydrogen();
+        hydrogenCar.openDoor();
     }
 }
