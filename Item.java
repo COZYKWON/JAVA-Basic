@@ -1,22 +1,20 @@
-package ex1;
+package extends1.ex;
 
 public class Item {
 
     private String name;
     private int price;
-    private int quantity;
 
-    public Item(String name, int price, int quantity) {
+    protected Item(String name, int price) {
         this.name = name;
         this.price = price;
-        this.quantity = quantity;
     }
 
-    public String getName() {
-        return name;
+    public void print() {
+        System.out.println("이름: " + name + ", 가격: " + price);
     }
 
-    public int getTotalPrice() {
-        return price * quantity;
+    public int getPrice() {
+        return price;
     }
 }
