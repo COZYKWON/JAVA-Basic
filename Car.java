@@ -1,12 +1,8 @@
-package extends1.overriding;
+package poly.car1;
 
-public class Car {
+public interface Car {
 
-    public void move() {
-        System.out.println("차를 이동합니다.");
-    }
-
-    public void openDoor() {
-        System.out.println("문을 엽니다.");
-    }
+    void startEngine();
+    void offEngine();
+    void pressAccelerator();
 }
